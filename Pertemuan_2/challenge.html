@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      nav {
+        width: 100%;
+        background-color: antiquewhite;
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+      }
+      nav div {
+        padding: 20px;
+        width: 100%;
+        display: flex;
+        align-content: center;
+        justify-content: space-between;
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: row;
+        gap: 5px;
+      }
+      nav div a{
+        padding: 10px 20px;
+        background-color: transparent;
+        border: 1px solid black;
+        border-radius: 5px;
+      }
+      nav div a:hover{
+        background-color: black;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div>
+        <a href="index.html">HOME</a>
+        <a href="index.html">PRODUCT</a>
+        <a href="index.html">GALLERY</a>
+        <a href="index.html">BLOG</a>
+        <a href="index.html">INVENTORY</a>
+      </div>
+    </nav>
+    <h1>JOHN</h1>
+    <p>Front End Designer</p>
+    <p>Edit Resume</p>
+    <p>Availability</p>
+    <p>Full Time</p>
+    <p>Usia</p>
+    <p>19</p>
+    <p>Lokasi</p>
+    <p>Jakarta</p>
+    <p>Pengalaman</p>
+    <p>2</p>
+    <p>Email</p>
+    <p>email@gmail.com</p>
+    <section>
+      <form>
+        <div>
+          <label for="nama">Nama</label>
+          <input type="text" placeholder="masukan nama anda" />
+        </div>
+        <div>
+          <label for="role">Role</label>
+          <input type="text" />
+        </div>
+        <div>
+          <label for="availability">Availability</label>
+          <input type="text" />
+        </div>
+        <div>
+          <label for="usia">Usia</label>
+          <input type="number" />
+        </div>
+        <div>
+          <label for="lokasi">Lokasi</label>
+          <input type="text" />
+        </div>
+        <div>
+          <label for="year_experince">Years Experience</label>
+          <input type="number" />
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input type="email" />
+        </div>
+        <div>
+          <button>submit</button>
+        </div>
+      </form>
+    </section>
+  </body>
+</html>
