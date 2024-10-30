@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Simpanan Anggota Koperasi</title>
+  </head>
+  <body>
+    <h1>Koperasi</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Nama</th>
+          <th>Simpanan</th>
+        </tr>
+      </thead>
+      <tbody id="listAnggota"></tbody>
+    </table>
+    <form>
+      <div>
+        <label>Nama</label>
+        <input type="text" id="inputName" />
+      </div>
+      <div>
+        <label>Simpanan</label>
+        <input type="text" id="inputSimpanan" />
+      </div>
+    </form>
+
+    <div id="totalSimpanan">Total Simpanan Seluruh Anggota: Rp</div>
+
+    <button id="tambahAnggota" onclick="menambahAnggota()">
+      Tambah Anggota
+    </button>
+
+    <button id="Hapus Anggota" onclick="hapusAnggota()">Hapus</button>
+
+    <script>
+      let totalSimpananSemuaAnggota = 0;
+
+      const listAnggota = [];
+
+      function renderAnggota() {
+        let row = "";
+
+        const listAnggotaElement = document.getElementById("listAnggota");
+        listAnggota.forEach((value) => {
+          row += `<tr>
+                <td>${value.name}</td>
+                <td>${value.simpanan}</td>
+                </tr>`;
+        });
+
+        listAnggotaElement.innerHTML = row;
+      }
+
+      renderAnggota();
+
+      function menambahAnggota() {
+        const inputName = document.getElementById("inputName");
+        const inputSimpanan = document.getElementById("inputSimpanan");
+
+        console.log(inputName.value, inputSimpanan.value);
+
+        listAnggota.push({
+          name: inputName.value,
+          simpanan: inputSimpanan.value,
+        });
+
+        
+
+        renderAnggota();
+      }
+
+      function hapusAnggota() {
+        listAnggota.pop();
+        renderAnggota();
+      }
+
+    </script>
+  </body>
+</html>

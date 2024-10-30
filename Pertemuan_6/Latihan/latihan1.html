@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simpanan Koperasi</title>
+</head>
+<body>
+    <h1>Data Simpanan Koperasi</h1>
+    <div id="output"></div>
+
+    <script type="text/javascript">
+        // variabel
+        let simpananWajib = 50000;
+        let simpananSukarela = 30000;
+        let simpananKhusus = 20000;
+        // totalSimpanan
+        let simpananTotal = simpananWajib + simpananSukarela + simpananKhusus;
+        // totalbunga
+        let bunga = 5/100;
+        let bungaSimpanan = simpananTotal * bunga;
+        // totalSimpanan
+        let totalSimpanan = simpananTotal + bungaSimpanan;
+        // menampilkan hasil di console
+        console.log(totalSimpanan)
+        // menampilkan di HTML
+        document.getElementById("output").innerHTML = totalSimpanan
+    </script>
+</body>
+</html>
