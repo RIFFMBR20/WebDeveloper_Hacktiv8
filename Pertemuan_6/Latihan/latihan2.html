@@ -27,7 +27,9 @@
       </div>
     </form>
 
-    <div id="totalSimpanan">Total Simpanan Seluruh Anggota: Rp</div>
+    <div id="totalSimpanan">
+        <label>Total Simpanan</label>
+    </div>
 
     <button id="tambahAnggota" onclick="menambahAnggota()">
       Tambah Anggota
@@ -66,8 +68,6 @@
           name: inputName.value,
           simpanan: inputSimpanan.value,
         });
-
-        
 
         renderAnggota();
       }
