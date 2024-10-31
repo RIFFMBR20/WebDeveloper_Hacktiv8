@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pertemuan</title>
+    <style>
+      .hidden {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <button id="image1" onclick="toggleImage()">Toggle</button>
+    </div>
+    <img
+      width="100px"
+      id="johnImage"
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/John_Legend_2019_by_Glenn_Francis_%28cropped%29.jpg/1200px-John_Legend_2019_by_Glenn_Francis_%28cropped%29.jpg"
+    />
+
+    <h1 id="displayName"></h1>
+    <h1 id="displayEdu"></h1>
+    <h1 id="displayGender"></h1>
+
+    <form action="" id="submitForm">
+        <div>
+            <label>Name :</label>
+            <input type="text" name="name" id="inputName">
+        </div>
+        <div>
+            <label for="">Pendidikan</label>
+            <select id="selectEdu" name="education">
+                <option value="sd">SD</option>
+                <option value="smp">SMP</option>
+                <option value="sma">SMA</option>
+            </select>
+        </div>
+        <div>
+            <label>Gender</label>
+            <div>
+                <div>
+                    <input type="radio" name="gender" value="male">
+                    <label>Male</label>
+                </div>
+                <div>
+                    <input type="radio" name="gender" value="female">
+                    <label>Female</label>
+                </div>
+            </div>
+        </div>
+
+        <button type="submit">
+            Submit
+        </button>
+    </form>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
