@@ -67,13 +67,26 @@ document.title = "Fikri Arifful"
 // body.append(namaKamu)
 
 const btn1 = document.getElementById('btn1')
-const btn2 = document.getElementById('btn2')
+const btn2 = document.querySelector('.btn2')
 
-console.log(btn1)
-console.log(btn2)
+// console.log(btn1)
+// console.log(btn2)
+const defaulText = 'klik saya'
+btn1.textContent = 'klik saya 1'
 
 btn1.style.border = 'none'
 btn1.style.padding = '8px'
 btn1.style.fontSize = '24px'
 btn1.style.background = 'tomato'
 
+function gantiWarna(){
+    btn1.style.background = 'aqua'
+}
+
+function ubahText(){
+    btn1.textContent = 'hihih hahah'
+}
+
+function oriText(){
+    btn1.textContent = defaulText
+}
