@@ -86,6 +86,26 @@ function main(args?: any[]) {
 
   let tuple: [String, number] = ["john", 30];
 
+
+  let direction : 'left' | 'right' = 'right';
+
+  let scores : number[] = [10,20,30,40,50]
+  scores.push(100)
+
+  for (let score of scores){
+    console.log(score)
+  }
+
+}
+
+type A = {name : string}
+type B = {age : number}
+
+type AandB = A&B
+
+const abc : AandB={
+    name : 'dwdw',
+    age : 10
 }
 
 function hello(name: string = ""): string | null {
